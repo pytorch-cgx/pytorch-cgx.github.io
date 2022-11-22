@@ -31,7 +31,7 @@ We see that CGX allows to achieve up to 100% speedup compared to Nvidia NCCL rea
 
 We checked the prices of moving the training to the cloud. 
 We compared the low-bandwidth servers on Genesis cloud with 8xRTX3090 gpus and bandwidth overprovisioned servers on AWS with 8 x V100.
-As the benchmark we chose training og BERT on question-answering task
+As the benchmark we chose training of BERT on question-answering task
 
 | Instance       | Price per hour ($) | Training cost ($) | 
 |----------------|--------------------|-------------------|

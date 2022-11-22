@@ -4,8 +4,8 @@ title: ""
 permalink: /
 ---
 
-# Welcome to Pytorch-CGX documentation
-[Pytorch-CGX](https://github.com/pytorch-cgx/pytorch-cgx) is a pytorch extension adding a backend for pytorch distributed supporting allreduce of quantized buffers.
+# Welcome to Pytorch-CGX
+[Pytorch-CGX](https://github.com/IST-DASLab/torch_cgx) is a pytorch extension adding a backend for pytorch distributed supporting allreduce of quantized buffers.
 It supports quantizations of float16, float32 to 1-8 bits.
 
 CGX is based on MPI torch.distributed backend. The extension essentially only replaces allreduce primitive.
