@@ -27,16 +27,4 @@ We see that CGX allows to achieve up to 100% speedup compared to Nvidia NCCL rea
 ![Transformer-XL base](/assets/images/TXL_comparison.png){:class="img-responsive" width="49%"}
 ![BERT](/assets/images/BERT_comparison.png){:class="img-responsive" width="49%"}
 
-# Cloud costs
-
-We checked the prices of moving the training to the cloud. 
-We compared the low-bandwidth servers on Genesis cloud with 8xRTX3090 gpus and bandwidth overprovisioned servers on AWS with 8 x V100.
-As the benchmark we chose training of BERT on question-answering task
-
-| Instance       | Price per hour ($) | Training cost ($) | 
-|----------------|--------------------|-------------------|
-| Genesis + NCCL | 10.4               | 61.7              | 
-| AWS + NCCL     | 24.5               | 49.0              |
-| Genesis + NCCL | 10.4               | **18.6**          |
-
 For more benchmarks, please refer to the [CGX paper](https://arxiv.org/abs/2111.08617).

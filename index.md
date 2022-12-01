@@ -41,6 +41,19 @@ Look at the speedup using CGX training on 8xRTX3090 compared to the Nvidia NCCL:
 
 ![Transformer-XL base](/assets/images/TXL_comparison.png){:class="img-responsive"}
 
+# Cloud costs
+
+We checked the prices of moving the training to the cloud.
+We compared the low-bandwidth servers on Genesis Cloud with 8xRTX3090 gpus and bandwidth over-provisioned servers on AWS with 8 x V100.
+As the benchmark we chose training of BERT on question-answering task
+
+| Instance                  | Price per hour ($) | Training cost ($) | 
+|---------------------------|--------------------|-------------------|
+| Genesis Cloud without CGX | 10.4               | 61.7              | 
+| AWS                       | 24.5               | 49.0              |
+| Genesis Cloud with CGX    | 10.4               | **18.6**          |
+
+
 See [benchmarks](/benchmarks) for further benchmark details.
 
 
